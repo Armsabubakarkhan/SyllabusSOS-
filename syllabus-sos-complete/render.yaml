@@ -1,0 +1,36 @@
+services:
+  - type: web
+    name: syllabus-sos
+    env: node
+    plan: starter
+    region: oregon
+    buildCommand: npm run build
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: HOST
+        value: 0.0.0.0
+      - key: TRUST_PROXY
+        value: "true"
+      - key: DATABASE_PATH
+        value: /var/data/syllabussos.db
+      - key: APP_SECRET
+        generateValue: true
+      - key: PAYMENTS_MODE
+        value: test
+      - key: DEMO_MODE
+        value: "true"
+      - key: PLATFORM_FEE_PERCENT
+        value: "10"
+      - key: RADAR_MIN_RESPONSES
+        value: "5"
+      - key: SESSION_DAYS
+        value: "7"
+    disk:
+      name: syllabus-db-data
+      mountPath: /var/data
+      sizeGB: 1

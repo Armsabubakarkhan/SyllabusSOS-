@@ -1,0 +1,22 @@
+{
+  "name": "syllabus-sos",
+  "version": "1.0.0",
+  "description": "SyllabusSOS++: university-scoped peer tutoring, credits, messaging and campus community.",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server/index.js",
+    "build": "node --disable-warning=ExperimentalWarning scripts/check-env.js",
+    "seed": "node --disable-warning=ExperimentalWarning server/seed.js",
+    "check-env": "node --disable-warning=ExperimentalWarning scripts/check-env.js",
+    "scan-secrets": "node scripts/scan-secrets.js",
+    "audit": "node --disable-warning=ExperimentalWarning scripts/audit.js",
+    "check-package": "node scripts/check-package.js",
+    "test": "node --disable-warning=ExperimentalWarning --test test/e2e.test.js"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

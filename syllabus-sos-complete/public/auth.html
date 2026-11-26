@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign in or join, SyllabusSOS++</title>
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="__ORIGIN__/login">
+  <meta name="description" content="Sign in or join SyllabusSOS++ as a student or a teacher.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-head">
+    <div class="wrap">
+      <a class="mark" href="/">SyllabusSOS++</a>
+      <nav class="nav" aria-label="Main">
+        <a href="/how-it-works">How it works</a>
+        <a href="/campuses">Campuses</a>
+        <a href="/credits">Credits</a>
+        <a href="/login" aria-current="page">Sign in</a>
+        <a class="btn btn-primary btn-sm" href="/login?tab=register">Join your campus</a></nav>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <h1 class="visually-hidden">Sign in or join SyllabusSOS++</h1>
+    <div class="auth-wrap">
+      <div class="who-pick" role="group" aria-label="Who are you">
+        <button type="button" id="pick-student" aria-pressed="true"><strong>Student</strong><span>Learn, study, and peer tutoring</span></button>
+        <button type="button" id="pick-teacher" aria-pressed="false"><strong>Teacher / Tutor</strong><span>Faculty teacher or peer student tutor</span></button>
+      </div>
+      <div class="tabs" role="tablist" aria-label="Account">
+        <button type="button" role="tab" id="tab-login" aria-selected="true" aria-controls="panel">Sign in</button>
+        <button type="button" role="tab" id="tab-register" aria-selected="false" aria-controls="panel">Create account</button>
+      </div>
+      <section class="panel" id="panel" role="tabpanel"></section>
+    </div>
+  </main>
+  <div id="foot"></div>
+  <script type="module" src="/js/auth.js"></script>
+</body>
+</html>

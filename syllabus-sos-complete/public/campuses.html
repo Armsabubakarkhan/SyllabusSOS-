@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campuses, SyllabusSOS++</title>
+  <meta name="description" content="Every university has its own space on SyllabusSOS++. Open a campus page.">
+  <link rel="canonical" href="__ORIGIN__/campuses">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-head">
+    <div class="wrap">
+      <a class="mark" href="/">SyllabusSOS++</a>
+      <nav class="nav" aria-label="Main">
+        <a href="/how-it-works">How it works</a>
+        <a href="/campuses" aria-current="page">Campuses</a>
+        <a href="/credits">Credits</a>
+        <a href="/login">Sign in</a>
+        <a class="btn btn-primary btn-sm" href="/login?tab=register">Join your campus</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="pagehead">
+      <div class="wrap">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> &gt; <span aria-current="page">Campuses</span></nav>
+        <p class="eyebrow">Campuses</p>
+        <h1>Every university gets its own space.</h1>
+        <p class="lede">Courses, tutors, messages, friends and events are all separated by university. A student at one campus never sees another campus.</p>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap split">
+        <div>
+          <h2>Find your university</h2>
+          <p>Open a campus page to see its courses and how many tutors are listed.</p>
+          <p>Your university is not listed? Add it when you register and an administrator reviews it.</p>
+          <p><a class="btn btn-primary" href="/login?tab=register">Join your campus</a></p>
+        </div>
+        <div id="campus-list" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="foot"></div>
+  <script type="module" src="/js/pages.js"></script>
+</body>
+</html>

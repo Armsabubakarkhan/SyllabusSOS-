@@ -1,0 +1,65 @@
+[build]
+  publish = "public"
+  functions = "netlify/functions"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[functions]
+  node_bundler = "esbuild"
+  included_files = ["data/syllabussos.db", "server/**"]
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/login"
+  to = "/auth.html"
+  status = 200
+
+[[redirects]]
+  from = "/campuses"
+  to = "/campuses.html"
+  status = 200
+
+[[redirects]]
+  from = "/credits"
+  to = "/credits.html"
+  status = 200
+
+[[redirects]]
+  from = "/how-it-works"
+  to = "/how-it-works.html"
+  status = 200
+
+[[redirects]]
+  from = "/privacy"
+  to = "/privacy.html"
+  status = 200
+
+[[redirects]]
+  from = "/terms"
+  to = "/terms.html"
+  status = 200
+
+[[redirects]]
+  from = "/student"
+  to = "/views/student.html"
+  status = 200
+
+[[redirects]]
+  from = "/teacher"
+  to = "/views/teacher.html"
+  status = 200
+
+[[redirects]]
+  from = "/admin"
+  to = "/views/admin.html"
+  status = 200
+
+[[redirects]]
+  from = "/u/*"
+  to = "/u.html"
+  status = 200

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SyllabusSOS++, tutors from your own university</title>
+  <meta name="description" content="Find a tutor in your course at your own university, book a session with credits held until it is done, and keep up with your campus.">
+  <link rel="canonical" href="__ORIGIN__/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-head">
+    <div class="wrap">
+      <a class="mark" href="/">SyllabusSOS++</a>
+      <nav class="nav" aria-label="Main">
+        <a href="/how-it-works">How it works</a>
+        <a href="/campuses">Campuses</a>
+        <a href="/credits">Credits</a>
+        <a href="/login">Sign in</a>
+        <a class="btn btn-primary btn-sm" href="/login?tab=register">Join your campus</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap">
+        <div>
+          <h1><span>Learn it from</span><span>someone on</span><span>your campus.</span></h1>
+          <p class="lede">A classmate who has finished your course can teach it to you, one on one, for a price you can see before you book.</p>
+          <div class="row cta">
+            <a class="btn btn-primary" href="/login?tab=register">Create an account</a>
+            <a class="btn" href="/campuses">Browse campuses</a>
+          </div>
+        </div>
+
+        <section class="panel finder" aria-labelledby="finder-title">
+          <h2 id="finder-title">Try the tutor search</h2>
+          <p class="small muted">This is the real search, running on sample campuses with sample profiles. Names are shortened.</p>
+          <div class="controls">
+            <div>
+              <label for="demo-campus" class="visually-hidden">Campus</label>
+              <select id="demo-campus" aria-label="Campus"></select>
+            </div>
+            <div>
+              <label for="demo-q" class="visually-hidden">Search</label>
+              <input id="demo-q" type="search" placeholder="Course or topic, for example CS301" autocomplete="off" maxlength="60">
+            </div>
+          </div>
+          <div id="demo-results" aria-live="polite"></div>
+        </section>
+      </div>
+    </section>
+
+    <section class="band tinted">
+      <div class="wrap">
+        <h2>Two ways in</h2>
+        <div class="doors">
+          <div class="panel">
+            <h3>I am a student</h3>
+            <p>Find a classmate or senior who can teach your course, or offer a course you know well. Practice checks, learning missions and a campus feed are part of your space.</p>
+            <div class="row"><a class="btn btn-primary" href="/login?as=student">Student sign in</a><a class="btn" href="/login?as=student&amp;tab=register">Join as a student</a></div>
+          </div>
+          <div class="panel">
+            <h3>I am a teacher</h3>
+            <p>Offer one on one sessions, review the resources students share, see which topics students find hard and post to your campus once verified.</p>
+            <div class="row"><a class="btn btn-primary" href="/login?as=teacher">Teacher sign in</a><a class="btn" href="/login?as=teacher&amp;tab=register">Join as a teacher</a></div>
+          </div>
+        </div>
+        <p class="small muted">Not sure how it works yet? <a href="/how-it-works">Read how a session works</a>, <a href="/campuses">see the campuses</a> or <a href="/credits">learn how credits work</a>.</p>
+      </div>
+    </section>
+
+    <section class="band ink">
+      <div class="wrap row between">
+        <h2 class="flush">Start with your own course.</h2>
+        <a class="btn btn-primary" href="/login?tab=register">Create an account</a>
+      </div>
+    </section>
+  </main>
+
+  <div id="foot"></div>
+  <script type="module" src="/js/landing.js"></script>
+</body>
+</html>
